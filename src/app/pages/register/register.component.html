@@ -1,0 +1,147 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!--a routerLinkActive="active"style="margin-top: -120px ;" [routerLink]="['/ajout-prof']" class="btn btn-primary btn-lg">Ajouter un Enseignant</a-->
+      
+     </div> 
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <!-- Table -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow" style="    margin-top: -60px;">
+        <div class="card-header border-0">
+          <div class="col-12 m-3 text-right">
+            <a href="#!" class="btn btn-primary m-2" [routerLink]="['/user-profile']">
+              Menu principale
+            </a>
+          </div>
+          <h3 class="mb-0">Liste des Demandes de Lancement des nouveaux clubs</h3>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Nom de club</th>
+                <th scope="col">Type</th>
+                <th scope="col">Nom de President </th>
+                <th scope="col">Email de President</th>
+                <th scope="col">Tel de President</th>
+                <th scope="col">Nombre Max des membres </th>
+                <th scope="col">Description</th>
+                <th scope="col">Date Lancement</th>
+                <th scope="col">Budget</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <!--<tbody>
+              <tr>
+                <th scope="row">
+                  <div class="media align-items-center">
+                    <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
+                      <img alt="Image placeholder" src="../assets/img/theme/enc.png">
+                    </a>
+                    <div class="media-body">
+                      <span class="mb-0 text-sm">ENIC'ulture</span>
+                    </div>
+                  </div>
+                </th>
+                <td>
+                  Club_culturel
+                </td>
+                <td>
+                  Chehine
+                  </td>
+                  <td>
+                    chehinebensalah@hotmail.com
+                  </td>
+                  <td>
+                    57880990
+                    </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">90%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                
+                <td>
+                  <span class="badge badge-dot mr-4">
+                    <i class="bg-warning"></i> ---
+                  </span>
+                </td>
+
+                  <td>
+                          09/09/2023
+                          </td>
+                          
+                  <td>
+                    500D
+                    </td>
+                <td class="text-right">
+                  <div class="btn btn-warning btn-xs"
+               >Valider</div>
+              <div class="btn btn-danger btn-xs" >Non Valider
+              </div>
+                </td>
+              </tr>
+              
+            </tbody>-->
+            <tbody>
+              <tr *ngFor="let club of listes">
+               
+                <td>{{club.nomClub}}</td>
+                <td>{{club.type}}</td>
+                <td>{{club.nom_president}}</td>
+                <td>{{club.email_president}}</td>
+                <td>{{club.tel_president}}</td>
+                <td>{{club.nbMembre}}</td>
+                <td>{{club.description}}</td>
+                <td>{{club.dateLance}}</td>
+                <td>{{club.budget}}</td>
+              
+                <td class="text-right">
+                  <div class="btn btn-warning btn-xs"
+               >Valider</div>
+              <div class="btn btn-danger btn-xs" >Non Valider
+              </div>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer py-4">
+          <nav aria-label="...">
+            <ul class="pagination justify-content-end mb-0">
+              <li class="page-item ">
+                <a class="page-link" href="javascript:void(0)"  routerLinkActive="active" [routerLink]="['/abscence-ens']">
+                  <i class="fas fa-angle-left"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item ">
+                <a class="page-link" href="javascript:void(0)">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" href="javascript:void(0)">
+                  <i class="fas fa-angle-right"></i>
+                  <span class="sr-only" >Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+

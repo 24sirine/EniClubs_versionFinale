@@ -1,0 +1,65 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <!-- Table -->
+  <div class="row">
+    <div class="col">
+     
+        <h2 style ="text-align : center">Espace Etudiant</h2>
+        <div class="row">
+          <div class="col-xl-5 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <h3 style ="text-align: center">Les Demandes</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+      
+                  <hr class="my-2" />
+                  <!-- Description -->
+                  <h6 class="heading-small text-muted mb-4"></h6>
+                    <div class="card-header text-center border-0 pt-4 pt-md-4 pb-0 pb-md-4">
+                      <div class="d-flex justify-content-between align-items-center" style="flex-direction: column">
+                        <a routerLinkActive="active" [routerLink]="['/add-ab']"  class="btn btn-sm btn-info mr-4">Demande Creation Club</a>
+                        <p>                </p>
+                        <form role="form">
+                          <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="ni ni-caps-small"></i></span>
+                              </div>
+                              <input class="form-control" placeholder="Code-responsable" type="code-resp">
+                            </div>
+                          </div>
+                        <a routerLinkActive="active" [routerLink]="['/ajout-prof']" class="btn btn-sm btn-default float-right">Demande Lancement Event</a>
+                        <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="ni ni-caps-small"></i></span>
+                              </div>
+                              <input class="form-control" placeholder="Code-responsable" type="code-resp">
+                            </div>
+                          </div>                        
+                        <a routerLinkActive="active" [routerLink]="['/emploiTemps']" class="btn btn-sm btn-primary">Demande Renouvellement Club</a>
+                        </form>
+                        </div>
+                    </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
