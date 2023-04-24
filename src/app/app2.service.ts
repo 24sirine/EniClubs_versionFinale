@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Observable } from 'rxjs'
-import { FormRenouvellement } from './abscence-ens/FormRenouvellement';
+import { FormRenouvellement } from './FormRenouvellement/FormRenouvellement';
 @Injectable({
   providedIn: 'root'
 })

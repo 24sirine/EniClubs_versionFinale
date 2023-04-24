@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.adminservice.getAdminData(prenom,nom,email,mdp,code).subscribe((res:boolean)=>{
       this.getData = res;
       if(this.getData == true){
-        console.log("heelo");
+        console.log("hello");
         this.router.navigate(["/user-profile"]);
       } 
       else {

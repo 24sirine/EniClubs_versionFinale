@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Observable } from 'rxjs'
-import { FormLanceEvent } from './ajout-prof/FormLanceEvent';
+import { FormLanceEvent } from './FormLanceEvent/FormLanceEvent';
 
 @Injectable({
   providedIn: 'root'

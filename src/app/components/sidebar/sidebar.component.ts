@@ -8,22 +8,22 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'ni-tv-2 text-primary', class: '' },
+    { path: '/dashboard', title: 'Menu Principal',  icon: 'ni-tv-2 text-primary', class: '' },
  
-    { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
-    { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
-    { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/dashboard', title: 'Admin Profile',  icon:'ni-single-02 text-yellow', class: '' },
+    { path: '/dashboard', title: 'Espace Etudiant ',  icon:'ni-single-02 text-yellow', class: '' },
 
-    { path: '/abscence-ens', title: 'Abscence-ens',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/dashboard', title: 'Liste Demande Event',  icon:'ni-bullet-list-67 text-red', class: '' },
+    { path: '/dashboard', title: 'Liste D.Nouveaux clubs',  icon:'ni-bullet-list-67 text-red', class: '' },
+
+    { path: '/dashboard', title: 'Liste D.Renouvellement clubs',  icon:'ni-bullet-list-67 text-red', class: '' },
   
  
 
-    { path: '/emploiTemps', title: 'EmploiTemps',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/emploiExa', title: 'EmploiExa',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/dashboard', title: 'Formulaire R.Club',  icon:'ni-key-25 text-info', class: '' },
 
 
-    { path: '/ajout-prof', title: 'Ajout-prof',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/dashboard', title: 'Formulaire L.Event',  icon:'ni-key-25 text-info', class: '' },
 
   
 

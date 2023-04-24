@@ -3,15 +3,15 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 
 
-import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
-import { TablesComponent } from '../../pages/tables/tables.component';
-import { EmploiTempsComponent } from 'src/app/emploiTemps/emploiTemps.component';
-import { EmploiExaComponent } from 'src/app/emploiExa/emploiExa.component';
+import { UserProfileComponent } from '../../pages/espaceAdmin/espaceAdmin.component';
+import { TablesComponent } from '../../pages/tabLanceEvent/tabLanceEventcomponent';
+import { EmploiTempsComponent } from 'src/app/RenouvClub/RenouvClub.component';
+import { EmploiExaComponent } from 'src/app/espaceEtudiant/espaceEtudiant.component';
 
 
-import { AjoutProfComponent } from 'src/app/ajout-prof/ajout-prof.component';
-import { AbscenceEnsComponent } from 'src/app/abscence-ens/abscence-ens.component';
-import { RegisterComponent } from '../../pages/register/register.component';
+import { AjoutProfComponent } from 'src/app/FormLanceEvent/FormLanceEvent.component';
+import { AbscenceEnsComponent } from 'src/app/FormRenouvellement/FormRenouvellement.component';
+import { RegisterComponent } from '../../pages/tabLanceClub/tabLanceClub.component';
 
 
 export const AdminLayoutRoutes: Routes = [
