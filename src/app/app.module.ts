@@ -1,9 +1,9 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
+import { NgForm } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
@@ -18,13 +18,17 @@ import { EmploiExaComponent } from './espaceEtudiant/espaceEtudiant.component';
 import { AjoutProfComponent } from './FormLanceEvent/FormLanceEvent.component';
 import { AbscenceEnsComponent } from './FormRenouvellement/FormRenouvellement.component';
 import { AjoutAbscenceComponent } from './FormLanceClub/FormLanceClub.component';
-
+import { UpdateclubComponent } from './pages/espaceAdmin/updateclub.component';
 import { DetailJustifComponent } from './detail-justif/detail-justif.component';
-import { FormsModule } from '@angular/forms';
+import { UpdateeventComponent } from './pages/espaceAdmin/updateevent.component';
+
+
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
   imports: [
+    BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
@@ -33,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     AppRoutingModule,
     FormsModule,
+    
   ],
   declarations: [
     AppComponent,
@@ -41,11 +46,11 @@ import { FormsModule } from '@angular/forms';
     EmploiTempsComponent,
     EmploiExaComponent,
     
-  
+    UpdateeventComponent,
     AjoutProfComponent,
     AbscenceEnsComponent,
     AjoutAbscenceComponent,
-  
+  UpdateclubComponent,
     DetailJustifComponent,
    
   ],

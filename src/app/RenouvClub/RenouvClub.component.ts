@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { App2Service } from 'src/app/app2.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { App2Service } from 'src/app/app2.service';
   styleUrls: ['./RenouvClub.component.css']
 })
 export class EmploiTempsComponent implements OnInit {
-  constructor(private service: App2Service) { }
+  constructor(private service: App2Service, private route: ActivatedRoute, private router : Router) { }
 
   data: any
 
@@ -43,7 +43,7 @@ export class EmploiTempsComponent implements OnInit {
 
     
     
-    //this.router.navigate(['/']);
+    this.router.navigate(['/emploiExa']);
 
 
 

@@ -18,7 +18,7 @@
           <div class="col-lg-3 order-lg-2">
             <div class="card-profile-image">
               <a href="javascript:void(0)">
-                <img src="assets/img/theme/prog.jpg" class="rounded-circle">
+                <img src="assets/img/theme/sirine.jpg" class="rounded-circle">
               </a>
             </div>
           </div>
@@ -34,16 +34,16 @@
           <div class="text-center">
             <p>               </p>
             <h3>
-              Ahmed Ben Ali<span class="font-weight-light">, 27</span>
+              Sirine Bourbiaa<span class="font-weight-light">, 23</span>
             </h3>
             <div class="h5 font-weight-300">
-              <i class="ni location_pin mr-2"></i>Tunisie, tunis
+              <i class="ni location_pin mr-2"></i>Tunisie, Bizerte
             </div>
             <div class="h5 mt-4">
               <i class="ni business_briefcase-24 mr-2"></i>Gestion clubs et evenements
             </div>
             <div>
-              <i class="ni education_hat mr-2"></i>University of Carthage
+              <i class="ni education_hat mr-2"></i>Université de carthage
             </div>
           </div>
         </div>
@@ -129,6 +129,44 @@
                      </td>
                <td>
                 {{ club.responsable}}
+               </td>
+            
+               <td class="text-right"> 
+                
+                  <button class="btn btn-warning" (click)="updateClub(club.id)" type="button">Modifier</button>
+              
+              <button style="height: 35px;" class="btn btn-danger btn-xs" (click)="removeClub(club.id)" type="button">Supprimer</button>
+               </td>
+
+             
+            </tr>
+            <tr *ngFor="let club of clubs2">
+              <th scope="row">
+                <div class="media align-items-center">
+                  <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
+                    <img alt="Image placeholder" src="assets/img/theme/nv.png">
+                  </a>
+                  <div class="media-body">
+                    <span class="mb-0 text-sm">{{ club.nomClub}}</span>
+                  </div>
+                </div>
+              </th>
+              <td>
+                {{ club.dateLance}}
+               
+              </td>
+              <td>
+                {{ club.description}}
+                </td>
+              <td>
+                {{ club.nbMembre}}
+              </td>
+              
+              <td>
+                {{ club.type}}        
+                     </td>
+               <td>
+                {{ club.nom_president}}
                </td>
             
                <td class="text-right"> <div class="btn btn-warning btn-xs">Modifier</div>
@@ -217,9 +255,8 @@
               </td>
               
                <td class="text-right">
-                <div class="btn btn-warning btn-xs"
-             >Modifier</div>
-             <button class="btn btn-danger btn-xs" (click)="removeEvent(event.id)" type="button">Supprimer</button>
+                <button class="btn btn-warning" (click)="updateEvent(event.id)" type="button">Modifier</button>
+             <button class="btn btn-danger btn-xs" style="height: 35px;"(click)="removeEvent(event.id)" type="button">Supprimer</button>
 
                </td>
 

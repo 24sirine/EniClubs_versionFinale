@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { App1Service } from 'src/app/app1.service';
 @Component({
   selector: 'app-FormLanceClub',
@@ -9,7 +9,7 @@ import { App1Service } from 'src/app/app1.service';
 })
 export class AjoutAbscenceComponent implements OnInit {
 
-  constructor(private service: App1Service) { }
+  constructor(private service: App1Service, private route: ActivatedRoute, private router : Router) { }
 
   data: any
 
@@ -44,7 +44,7 @@ export class AjoutAbscenceComponent implements OnInit {
 
     
     
-    //this.router.navigate(['/']);
+    this.router.navigate(['/emploiExa']);
   }
 
 }

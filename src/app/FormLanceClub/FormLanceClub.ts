@@ -6,6 +6,6 @@ email_president:String;
 	 tel_president:number;
 	nbMembre:number;
  description:String;	
- dateLance:String;
+ dateLance:Date;
 	 budget:number; 
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AjoutProfComponent } from 'src/app/FormLanceEvent/FormLanceEvent.component';
 import { AppService } from 'src/app/app.service';
+import { ValidationService } from './validation.service';
+import { FormLanceEvent } from 'src/app/FormLanceEvent/FormLanceEvent';
 //import { FormLanceEvent } from 'src/app/FormLanceEvent';
 @Component({
   selector: 'app-tabLanceEvent',
@@ -9,18 +12,25 @@ import { AppService } from 'src/app/app.service';
 })
 export class TablesComponent implements OnInit {
 
-  events: any[] | undefined
-  url: string = "http://localhost:8081/SpringMVC/servlet/";
+  Fevents: any[] | undefined
 
-  constructor(private service: AppService) { 
+  constructor(private service: AppService , private serviceF: ValidationService) { 
    
   }
 
   ngOnInit(): void {
     this.service.retrieveAllLanceEvent().subscribe(data => {
-      this.events = data;
+      this.Fevents = data;
     })
    
   }
-
+//////
+  removeE(id: number){
+   this.serviceF.removeE(id).subscribe(data => {
+      this.Fevents = this.Fevents?.filter(Fevent => Fevent.id !== id);
+    })
+    
+  
+  }
+  
 }

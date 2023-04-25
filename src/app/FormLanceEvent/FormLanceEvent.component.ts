@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AppService } from 'src/app/app.service';
 @Component({
   selector: 'app-FormLanceEvent',
@@ -9,7 +9,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class AjoutProfComponent implements OnInit {
 
-  constructor(private service: AppService) { }
+  constructor(private service: AppService, private route: ActivatedRoute, private router : Router) { }
 
   data: any
 
@@ -46,7 +46,7 @@ export class AjoutProfComponent implements OnInit {
 
     
     
-    //this.router.navigate(['/']);
+    this.router.navigate(['/emploiExa']);
   }
 
 

@@ -1,10 +1,10 @@
 export interface club{
     id :number;
-    nom : string;
+    nom : String;
     date_creation: Date;
-    description: string;
+    description: String;
     nb_membre: number;
-    type: string;
-    responsable:string;
-    url_logo:string;
+    type: String;
+    responsable:String;
+    url_logo:String;
 }

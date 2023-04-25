@@ -18,7 +18,7 @@
               Menu principale
             </a>
           </div>
-          <h3 class="mb-0 align-items-center ">Liste des Demandes des événemants</h3>
+          <h3 class="mb-0 align-items-center ">Liste des Demandes des événements</h3>
          
         </div>
         <div class="table-responsive">
@@ -41,149 +41,27 @@
                 <th scope="col">Actions </th>
               </tr>
             </thead>
-            <!--<tbody>
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/GDSC.png">
-                    </a>
-                    <div class="media-body">
-                      <span class="mb-0 text-sm">GDSC</span>
-                    </div>
-                  </div>
-                </th>
-                <td>
-                  workshope design graphique
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
-                    <i class="bg-warning"></i> sur_campus
-                  </span>
-                </td>
-                <td>
-                12/05/2023
-                </td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">4j</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  ------
-                  </td>
-                <td>
-                amelioration des competences en design
-                </td>
-                <td>
-                  Salle 33
-                  </td>
-                  <td>
-                    400D
-                    </td>
-                    <td>
-                      amalbenyakhlef@yahoo.com
-                      </td>
-                      <td>
-                        50385484
-                        </td><td>
-                          09/04/2023
-                          </td>
-                <td class="text-right">
-                  <div class="btn btn-warning btn-xs"
-               >Valider</div>
-              <div class="btn btn-danger btn-xs" >Non Valider
-              </div>
-  
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/melk.png">
-                    </a>
-                    <div class="media-body">
-                      <span class="mb-0 text-sm">Melkart</span>
-                    </div>
-                  </div>
-                </th>
-                <td>
-                  Competition en sécurité
-                </td>
-                <td>
-                  <span class="badge badge-dot">
-                    <i class="bg-success"></i> sur_campus
-                  </span>
-                </td>
-                <td>
-                  20/05/2023
-                </td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">2j</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  ------
-                </td>
-                <td>
-                  amelioration des competences en securité
-                </td>
-                <td>
-                  Amphi
-                </td>
-                <td>
-                 550D
-                  </td>
-                  <td>
-                    oumaima@yahoo.com
-                    </td>
-                    <td>
-                      21330365
-                       </td>
-                       <td>
-                        01/04/2023
-                         </td>
-                <td class="text-right">
-                  <div class="btn btn-warning btn-xs"
-               >Valider</div>
-              <div class="btn btn-danger btn-xs" >Non Valider
-              </div>
-                </td>
-              </tr>
-            </tbody>-->
+
             <tbody>
-              <tr *ngFor="let event of events">
+              <tr *ngFor="let Fevent of Fevents">
                
-                <td>{{event.nomClub}}</td>
-                <td>{{event.nomEvent}}</td>
-                <td>{{event.type}}</td>
-                <td>{{event.dateEvent}}</td>
-                <td>{{event.dureeEvent}}</td>
-                <td>{{event.description}}</td>
-                <td>{{event. objectifsEvent}}</td>
-                <td>{{event.place}}</td>
-                <td>{{event.budget}}</td>
-                <td>{{event.mailDemandeur}}</td>
-                <td>{{event.telDemandeur}}</td>
-                <td>{{event.dateDemande}}</td>
-                <td>{{event.urlImage}}</td>
+                <td>{{Fevent.nomClub}}</td>
+                <td>{{Fevent.nomEvent}}</td>
+                <td>{{Fevent.type}}</td>
+                <td>{{Fevent.dateEvent}}</td>
+                <td>{{Fevent.dureeEvent}}</td>
+                <td>{{Fevent.description}}</td>
+                <td>{{Fevent. objectifsEvent}}</td>
+                <td>{{Fevent.place}}</td>
+                <td>{{Fevent.budget}}</td>
+                <td>{{Fevent.mailDemandeur}}</td>
+                <td>{{Fevent.telDemandeur}}</td>
+                <td>{{Fevent.dateDemande}}</td>
+                <td>{{Fevent.urlImage}}</td>
                 <td class="text-right">
                   <div class="btn btn-warning btn-xs"
                >Valider</div>
-              <div class="btn btn-danger btn-xs" >Non Valider
-              </div>
+               <button class="btn btn-danger btn-xs" (click)="removeE(Fevent.id)" type="button">Non Valider</button>
                 </td>
               </tr>
              
